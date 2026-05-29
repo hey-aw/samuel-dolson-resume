@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Samuel Dolson Resume</title>
+    <style>
+      @page {
+        size: Letter;
+        margin: 0;
+      }
+
+      :root {
+        --ink: #172033;
+        --muted: #5f6878;
+        --rule: #d7dce5;
+        --accent: #2e6f70;
+        --accent-soft: #edf6f3;
+        --paper: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #eef1f5;
+        color: var(--ink);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10.8pt;
+        line-height: 1.42;
+      }
+
+      .page {
+        width: 8.5in;
+        min-height: 11in;
+        margin: 0 auto;
+        background: var(--paper);
+        display: grid;
+        grid-template-columns: 2.15in 1fr;
+      }
+
+      .sidebar {
+        background: #f4f7f8;
+        border-right: 1px solid var(--rule);
+        padding: 0.42in 0.26in 0.34in;
+      }
+
+      .main {
+        padding: 0.46in 0.46in 0.45in 0.38in;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 25pt;
+        line-height: 1;
+        letter-spacing: 0;
+        margin-bottom: 0.14in;
+      }
+
+      .contact {
+        color: var(--muted);
+        display: grid;
+        gap: 0.045in;
+        font-size: 10pt;
+      }
+
+      .section {
+        margin-top: 0.2in;
+      }
+
+      .sidebar .section:first-of-type {
+        margin-top: 0.22in;
+      }
+
+      h2 {
+        color: var(--accent);
+        font-size: 10.5pt;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--rule);
+        padding-bottom: 0.045in;
+        margin-bottom: 0.09in;
+      }
+
+      .summary {
+        font-size: 9.8pt;
+        color: #273246;
+      }
+
+      .skills {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 0.04in;
+      }
+
+      .skills li {
+        border-left: 3px solid #9ccbc2;
+        padding: 0.005in 0 0.005in 0.075in;
+        font-size: 8.9pt;
+      }
+
+      .interests {
+        color: var(--muted);
+        display: grid;
+        gap: 0.025in;
+        font-size: 9.1pt;
+      }
+
+      .item {
+        margin-bottom: 0.18in;
+      }
+
+      .item:last-child {
+        margin-bottom: 0;
+      }
+
+      .role {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.12in;
+        margin-bottom: 0.025in;
+      }
+
+      h3 {
+        font-size: 12.2pt;
+        line-height: 1.22;
+      }
+
+      .date {
+        color: var(--accent);
+        font-size: 9.4pt;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .org {
+        color: var(--muted);
+        font-size: 9.8pt;
+        margin-bottom: 0.06in;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 0.17in;
+      }
+
+      li {
+        margin-bottom: 0.035in;
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+
+      .education .item {
+        margin-bottom: 0.13in;
+      }
+
+      .degree {
+        color: var(--muted);
+        font-size: 9.8pt;
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+
+        .page {
+          margin: 0;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <aside class="sidebar">
+        <h1>Samuel<br>Dolson</h1>
+        <div class="contact" aria-label="Contact information">
+          <span>Beaverton, OR</span>
+          <span>rexdragon@icloud.com</span>
+        </div>
+
+        <section class="section">
+          <h2>Summary</h2>
+          <p class="summary">Responsible and creative student with experience in youth programs, outdoor service, peer leadership, and collaborative storytelling. Brings patience, imagination, and reliability to group activities, volunteer work, and hands-on learning environments.</p>
+        </section>
+
+        <section class="section">
+          <h2>Skills</h2>
+          <ul class="skills">
+            <li>Youth program support</li>
+            <li>Outdoor education support</li>
+            <li>Trail maintenance and stewardship</li>
+            <li>Group facilitation</li>
+            <li>Creative storytelling</li>
+            <li>Game design fundamentals</li>
+            <li>Communication and teamwork</li>
+            <li>Problem-solving</li>
+            <li>Planning and organization</li>
+            <li>Art and design thinking</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>Interests</h2>
+          <div class="interests">
+            <span>Costume design</span>
+            <span>Tabletop role-playing games</span>
+            <span>Reading</span>
+            <span>Art</span>
+            <span>Game design</span>
+          </div>
+        </section>
+      </aside>
+
+      <section class="main">
+        <section>
+          <h2>Volunteer and Work Experience</h2>
+
+          <article class="item">
+            <div class="role">
+              <h3>Assistant Camp Counselor</h3>
+              <span class="date">2024, 2025</span>
+            </div>
+            <p class="org">THPRD RISE Summer Program</p>
+            <ul>
+              <li>Assisted with outdoor environmental learning activities for youth day camp participants, ages 6-10.</li>
+              <li>Supported counselors with group activities, supervision, setup, cleanup, and transitions.</li>
+              <li>Helped create a safe, welcoming, and engaging environment for campers.</li>
+              <li>Completed more than 100 hours of volunteer service.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <div class="role">
+              <h3>Trail Ambassador and Volunteer</h3>
+            </div>
+            <p class="org">Trailkeepers of Oregon | Portland Metro and North Coast Region</p>
+            <ul>
+              <li>Participated in volunteer trail parties focused on trail building, maintenance, and restoration.</li>
+              <li>Assisted with demolition of a retired bridge and support for new trail design.</li>
+              <li>Trained as a Trail Ambassador to provide public information and guidance at Oswald West State Park.</li>
+              <li>Contributed to outdoor stewardship and public access to local trails.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <div class="role">
+              <h3>Dungeon Master</h3>
+              <span class="date">2024-2026</span>
+            </div>
+            <p class="org">Mountainside High School Dungeons &amp; Dragons Club</p>
+            <ul>
+              <li>Developed and ran a weekly tabletop role-playing campaign for a small group of peers.</li>
+              <li>Created storylines, characters, challenges, and collaborative gameplay experiences.</li>
+              <li>Facilitated group participation, problem-solving, and creative decision-making.</li>
+              <li>Built leadership, planning, communication, and improvisation skills.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section education">
+          <h2>Education</h2>
+
+          <article class="item">
+            <div class="role">
+              <h3>Passages Program, Beaverton Public Schools</h3>
+              <span class="date">2026</span>
+            </div>
+            <p class="degree">Graduate</p>
+          </article>
+
+          <article class="item">
+            <div class="role">
+              <h3>Mountainside High School</h3>
+              <span class="date">2024-2026</span>
+            </div>
+            <p class="degree">Student</p>
+          </article>
+
+          <article class="item">
+            <div class="role">
+              <h3>AIE Seattle Campus</h3>
+              <span class="date">2025</span>
+            </div>
+            <p class="degree">Preview Courses in Game Design</p>
+            <ul>
+              <li>Completed multiple preview courses focused on game design.</li>
+              <li>Explored creative and technical aspects of interactive media and game development.</li>
+            </ul>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
